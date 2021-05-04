@@ -23,14 +23,14 @@
     <title>Frontend Mentor | Coding Bootcamp Testimonials Slider</title>
   </head>
   <body>
-    <main class="main-container">
+    <main class="main-container--desktop">
       <aside class="testimonial--woman">
         <img
           src="./images/pattern-quotes.svg"
           alt="Quote Image"
           class="quote-image"
         />
-        <h1 class="testimonial__main testimonial__main">
+        <h1 class="testimonial__main">
           “ I’ve been interested in coding for a while but never taken the jump,
           until now. I couldn’t recommend this course enough. I’m now in the job
           of my dreams and so excited about the future. ”
@@ -48,7 +48,7 @@
           alt="Quote Image"
           class="quote-image"
         />
-        <h1 class="testimonial__main testimonial__main">
+        <h1 class="testimonial__main">
           “ If you want to lay the best foundation possible I’d recommend taking
           this course. The depth the instructors go into is incredible. I now
           feel so confident about starting up as a professional developer. ”
@@ -69,6 +69,48 @@
         </button>
       </div>
     </main>
+    <main class="main-container--mobile">
+      <div class="image-container">
+        <img src="./images/image-tanya.jpg" class="testimonial-image" />
+        <img src="./images/image-john.jpg" class="testimonial-image" />
+        <button class="slider-button">
+          <img src="./images/icon-prev.svg" class="slider-button__image" />
+          <img src="./images/icon-next.svg" class="slider-button__image" />
+        </button>
+      </div>
+      <aside class="testimonial--woman">
+        <img
+          src="./images/pattern-quotes.svg"
+          alt="Quote Image"
+          class="quote-image"
+        />
+        <h1 class="testimonial__main">
+          “ I’ve been interested in coding for a while but never taken the jump,
+          until now. I couldn’t recommend this course enough. I’m now in the job
+          of my dreams and so excited about the future. ”
+        </h1>
+        <span class="testimonial__sub-text testimonial__sub-text--bold"
+          >Tanya Sinclair</span
+        >
+        <p class="testimonial__sub-text testimonial__sub-text">UX Engineer</p>
+      </aside>
+      <aside class="testimonial--man">
+        <img
+          src="./images/pattern-quotes.svg"
+          alt="Quote Image"
+          class="quote-image"
+        />
+        <h1 class="testimonial__main">
+          “ If you want to lay the best foundation possible I’d recommend taking
+          this course. The depth the instructors go into is incredible. I now
+          feel so confident about starting up as a professional developer. ”
+        </h1>
+        <span class="testimonial__sub-text testimonial__sub-text--bold"
+          >John Tarkpor</span
+        >
+        <p class="testimonial__sub-text">Junior Front-end Developer</p>
+      </aside>
+    </main>
     <img src="./images/pattern-curve.svg" class="pattern-curve" />
 
     <div class="attribution">
@@ -80,5 +122,6 @@
     </div>
 
     <script src="./script.js"></script>
+    <script src="./script-mobile.js"></script>
   </body>
 </html>
