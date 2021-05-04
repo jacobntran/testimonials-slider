@@ -22,7 +22,8 @@ body {
   display: flex;
 }
 
-.testimonial {
+.testimonial--woman,
+.testimonial--man {
   width: 63.5rem;
   height: 35.4rem;
   color: hsl(240, 38%, 20%);
@@ -33,6 +34,10 @@ body {
   right: -1.5rem;
 }
 
+.testimonial--man {
+  display: none;
+}
+
 .testimonial__main {
   font-size: 3.2rem;
   font-weight: 300;
@@ -40,17 +45,9 @@ body {
   margin-bottom: 4rem;
 }
 
-.testimonial__main:nth-of-type(2) {
-  display: none;
-}
-
 .testimonial__sub-text {
   font-size: 2rem;
   color: hsl(240, 18%, 77%);
-}
-
-.testimonial__sub-text:nth-of-type(2) {
-  display: none;
 }
 
 .testimonial__sub-text--bold {
@@ -58,10 +55,6 @@ body {
   font-weight: 700;
   color: hsl(240, 38%, 20%);
   margin-right: 1rem;
-}
-
-.testimonial__sub-text--bold:nth-of-type(2) {
-  display: none;
 }
 
 .quote-image {
